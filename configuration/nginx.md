@@ -2,5 +2,57 @@
 
 NGINX 相关的配置可以单独写一本书，不过一开始，我们不会用到太多的配置选项。这本书主要介绍搭建一个 LEMP 环境的流程，你可以在相关资源里找到扩展学习的课程与资料。
 
+**查看 NGINX 的配置：**
+
+```
+cd /etc/nginx
+ls
+```
+
+**返回：**
+
+```
+conf.d          koi-utf  mime.types  nginx.conf   uwsgi_params
+fastcgi_params  koi-win  modules     scgi_params  win-utf
+```
+
+
+
+403 Forbidden
+
+```
+sudo mv default.conf default.conf.bak
+```
+
+创建
+
+```
+vi default.conf
+```
+
+内容
+
+```
+mkdir -p /mnt/web
+```
+
+创建
+
+```
+echo "<?php phpinfo(); ?>" >> /mnt/web/phpinfo.php
+```
+
+重载
+
+```
+sudo systemctl reload nginx
+```
+
+
+
+
+
+
+
 
 
