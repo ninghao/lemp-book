@@ -35,6 +35,7 @@
 * [运行 Drupal](ying-yong/yun-xing-drupal.md)
 * [运行 WordPress](ying-yong/yun-xing-wordpress.md)
 * [运行 Laravel](ying-yong/yun-xing-laravel.md)
+* [运行 PHP My Admin](ying-yong/yun-xing-php-my-admin.md)
 
 ## 附录
 
