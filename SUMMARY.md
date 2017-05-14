@@ -33,6 +33,8 @@
 ## 应用
 
 * [运行 Drupal](ying-yong/yun-xing-drupal.md)
+* [运行 WordPress](ying-yong/yun-xing-wordpress.md)
+* 运行 Laravel
 
 ## 附录
 
