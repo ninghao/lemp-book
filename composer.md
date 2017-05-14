@@ -72,12 +72,18 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.composer/vendor/bin
 ```
 
-意思就是在用户主目录下的` .composer/vendor/bin` 里面的东西，我们可以在任何地方执行。
+意思就是在用户主目录下的`.composer/vendor/bin` 里面的东西，我们可以在任何地方执行。
 
 让配置生效，执行：
 
 ```
 source ~/.bash_profile
+```
+
+Composer 安装器没用了，可以删除掉：
+
+```
+rm -rf installer
 ```
 
 
