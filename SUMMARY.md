@@ -19,6 +19,7 @@
 ## 配置
 
 * [配置 NGINX](configuration/nginx.md)
+* [SELinux](configuration/selinux.md)
 
 ## 附录
 
