@@ -54,9 +54,7 @@ composer
       command [options] [arguments]
       ...
 
-想让 composer 安装的东西可以在全局范围使用的话，需要配置一下。
-
-编辑：
+想让 composer 安装的东西可以在全局范围使用的话，需要配置一下，编辑：
 
 ```
  vi ~/.bash_profile
