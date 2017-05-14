@@ -80,7 +80,7 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.composer/vendor/bin
 source ~/.bash_profile
 ```
 
-Composer 安装器没用了，可以删除掉：
+Composer 安装器现在没用了，可以删除掉：
 
 ```
 rm -rf installer
