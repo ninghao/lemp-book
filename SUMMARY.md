@@ -30,6 +30,10 @@
 * [WP-CLI](wp-cli.md)
 * [Laravel Installer](laravel-installer.md)
 
+## 应用
+
+* [运行 Drupal](ying-yong/yun-xing-drupal.md)
+
 ## 附录
 
 * [相关资源](appendix--sources.md)
