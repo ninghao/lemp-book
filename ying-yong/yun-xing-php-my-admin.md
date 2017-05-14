@@ -19,5 +19,17 @@ curl -O https://files.phpmyadmin.net/phpMyAdmin/4.7.0/phpMyAdmin-4.7.0-all-langu
 unzip phpMyAdmin*.zip
 ```
 
+删除：
+
+```
+rm -rf phpMyAdmin*.zip
+```
+
+重命名解压之后的目录：
+
+```
+mv phpMyAdmin* phpmyadmin
+```
+
 
 
