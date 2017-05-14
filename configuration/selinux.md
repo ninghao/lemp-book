@@ -6,7 +6,7 @@
 sestatus
 ```
 
-**返回：**
+返回：
 
 ```
 SELinux status:                 enabled
@@ -47,10 +47,4 @@ SELINUX=disabled
 关掉了 SELinux 可以再去查看一下之前配置好的 NGINX 服务器。
 
 ![](/assets/phpinfo.png)
-
-
-
-
-
-
 
