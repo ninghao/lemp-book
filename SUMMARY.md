@@ -14,6 +14,7 @@
 * [软件仓库](stack/repo.md)
 * [NGINX](stack/nginx.md)
 * [MySQL / MariaDB](stack/mysql-mariadb.md)
+* [PHP](stack/php.md)
 
 ## 附录
 
