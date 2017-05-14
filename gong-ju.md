@@ -1,16 +1,12 @@
 # Git
 
-Git 可以为项目做版本控制项目。
-
-先搜索一下：
+Git 可以为项目做版本控制项目。先搜索一下：
 
 ```
 yum search git
 ```
 
-我看到一些 `git2u` 这个前缀的包，这应该是 ius 仓库提供的。
-
-安装 Git：
+我看到一些 `git2u` 这个前缀的包，这应该是 ius 仓库提供的。安装 Git：
 
 ```
 sudo yum install git2u -y
