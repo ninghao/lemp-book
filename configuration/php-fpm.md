@@ -52,3 +52,17 @@ sudo systemctl reload php-fpm
 
 
 
+```
+chown -R nginx:nginx /var/lib/php/fpm
+```
+
+
+
+
+
+
+
+
+
+
+

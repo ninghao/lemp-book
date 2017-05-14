@@ -31,5 +31,11 @@ rm -rf phpMyAdmin*.zip
 mv phpMyAdmin* phpmyadmin
 ```
 
+访问：
 
+```
+http://192.168.33.10/phpmyadmin
+```
+
+![](/assets/phpmyadmin.png)
 
