@@ -11,7 +11,7 @@ ps aux | grep nginx
 显示，运行 nginx: worker process 的用户是 `nginx`，再查看一下运行 PHP-FPM 的用户是谁：
 
 ```
-ps aux | grep nginx
+ps aux | grep php
 ```
 
 显示，运行 php-fpm: pool www 的用户是 `php-fpm`，下面我们可以把运行 PHP-FPM 的用户修改成 nginx。
@@ -43,10 +43,4 @@ sudo systemctl reload php-fpm
 ```
 
 这样运行 PHP-FPM 的用户就变成了 `nginx`，现在，我们可以把需要写入权限的目录的拥有者修改成 `nginx`，这样 PHP-FPM 就可以写入内容到这个目录了。
-
-
-
-
-
-
 
