@@ -62,5 +62,3 @@ chown -R nginx:nginx /var/lib/php/fpm
 
 
 
-
-
