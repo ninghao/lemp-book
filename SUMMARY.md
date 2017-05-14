@@ -11,7 +11,8 @@
 
 ## 搭建环境
 
-* [添加软件仓库](stack/repo.md)
+* [软件仓库](stack/repo.md)
+* [NGINX](stack/nginx.md)
 
 ## 附录
 
