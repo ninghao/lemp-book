@@ -1,38 +1,84 @@
 # Composer
 
-composer 是 PHP 的包管理工具。
+composer 是 PHP 的包管理工具。Drupal，Laravel 这类的应用都需要用到 Composer 。
 
-https://getcomposer.org/download/
-
-在 composer 的官方网站的 download 页面上，你会看到一段安装 composer 用的脚本  ..  复制一下它 .. 回到终端 .. 登陆到服务器 ..
-
-因为安装 composer 的脚本里面用到了 php 命令 ..  所以在我们的 php 环境里需要再去安装一下 php-cli  ..  sudo yum install php70u-cli -y    注意你需要安装跟自己现有的 php 相同版本的 php-cli  ..
-
-完成以后，把安装的代码粘贴过来执行一下 ...  如果环境符合安全就会安装成功 ..
-
-在当前的目录里面，会下载一个 composer.phar  ..  使用它的时候可以这样 php composer.phar  ...
-
-我们可以把它放在环境变量的某个目录的下面，这样就可以在任何地方去使用 composer 了 ..  先查看一下环境变量 ..
+安装 Composer，先进入到某个目录的下面：
 
 ```
- echo $PATH 
+cd ~
 ```
 
-比如我要把它放在 /usr/local/bin 目录的下面 ..   移动一下这个文件  ..
+下载 Composer 的安装器：
+
+```
+curl -O https://getcomposer.org/installer
+```
+
+使用 Composer 安装器安装 Composer：
+
+```
+php installer
+```
+
+这样会下载一个 composer.phar ，这就是 Composer。这个文件可以放在系统环境变量的某个目录下面，这样你就可以在任何地方使用 Composer 了。
+
+输出系统环境变量：
+
+```
+ echo $PATH
+```
+
+我决定把 Composer 放在 /usr/local/bin 这个目录的下面，执行：
 
 ```
  sudo mv composer.phar /usr/local/bin/composer
 ```
 
-想让 composer 安装的东西可以在全局范围使用的话，我们需要再去配置一下 .. 先编辑一个文件 ..
+然后再试一下：
 
 ```
- vi ~/.bash\_profile
+composer
 ```
 
-在这个 PATH 里面再添加一个目录的位置 .. 用 : 号分隔一下 .. $HOME/.composer/vendor/bin  ..  $HOME 表示用户的主目录 ..
+会返回一些帮助信息：
 
-意思就是在用户主目录下的 .composer/vendor/bin 里面的东西，我们可以在任何地方执行 ..
+       ______
+      / ____/___  ____ ___  ____  ____  ________  _____
+     / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+    / /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+    \____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                        /_/
+    Composer version 1.4.1 2017-03-10 09:29:45
 
-要让这个配置生效，再执行一下  source ~/.bash\_profile  ..
+    Usage:
+      command [options] [arguments]
+      ...
+
+想让 composer 安装的东西可以在全局范围使用的话，需要配置一下，编辑：
+
+```
+ vi ~/.bash_profile
+```
+
+原有：
+
+```
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+```
+
+在上面这行配置的结束添加 `:$HOME/.composer/vendor/bin`，像这样：
+
+```
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.composer/vendor/bin
+```
+
+意思就是在用户主目录下的` .composer/vendor/bin` 里面的东西，我们可以在任何地方执行。
+
+让配置生效，执行：
+
+```
+source ~/.bash_profile
+```
+
+
 
