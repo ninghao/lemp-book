@@ -28,7 +28,7 @@ gpgcheck=0
 enabled=1
 ```
 
-安装
+安装：
 
 ```
 sudo yum install nginx -y
