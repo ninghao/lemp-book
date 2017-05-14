@@ -26,13 +26,13 @@ fastcgi_params  koi-win  modules     scgi_params  win-utf
 sudo mv default.conf default.conf.bak
 ```
 
-然后自己配置一个配置文件：
+**然后自己配置一个配置文件：**
 
 ```
 sudo vi default.conf
 ```
 
-配置文件里的内容是：
+**配置文件里的内容是：**
 
 ```
 server {
@@ -56,35 +56,29 @@ server {
 
 这个配置文件里用了一个 `server` 区块，定了一个服务器。在它里面设置了监听的端口号， `root` 指令指定了网站的根目录是 `/mnt/web`，配置里有两个 `location` 区块。第二个 `location` 区块里设置了怎么处理对 php 文件的请求，这种请求交给了 PHP-FPM 服务（`127.0.0.1:9000`），`include` 载入了一个 fastcgi 的参数配置文件：`fastcgi_params`，这个文件是在 NGINX 配置目录下面。
 
-现在去创建网站的根目录：
+**现在去创建网站的根目录：**
 
 ```
 mkdir -p /mnt/web
 ```
 
-在网站根目录下面创建一个 php 文件：
+**在网站根目录下面创建一个 php 文件：**
 
 ```
 echo "<?php phpinfo(); ?>" >> /mnt/web/phpinfo.php
 ```
 
-重载 NGINX 可以让配置生效：
+**重载 NGINX 可以让配置生效：**
 
 ```
 sudo systemctl reload nginx
 ```
 
-访问：
+**访问：**
 
 ```
 http://192.168.33.10/phpinfo.php
 ```
 
 如果一切正常你应该会看到一个页面显示了环境里的 PHP 相关的信息。如果报错：403 Forbidden / File not found. / Access denied ，很可能是 SELinux 引起的，你需要关掉 SElinux。
-
-
-
-## 
-
-
 
