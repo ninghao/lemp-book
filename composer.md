@@ -54,7 +54,9 @@ composer
       command [options] [arguments]
       ...
 
-想让 composer 安装的东西可以在全局范围使用的话，需要配置一下，编辑：
+想让 composer 安装的东西可以在全局范围使用的话，需要配置一下。
+
+编辑：
 
 ```
  vi ~/.bash_profile
@@ -66,7 +68,7 @@ composer
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 ```
 
-在上面这行配置的结束添加 `:$HOME/.composer/vendor/bin`，像这样：
+在上面这行配置的结束添加 `:$HOME/.composer/vendor/bin` ，像这样：
 
 ```
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.composer/vendor/bin
