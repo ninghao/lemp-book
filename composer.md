@@ -1,6 +1,6 @@
 # Composer
 
-composer 是 PHP 的包管理工具。Drupal，Laravel 这类的应用都需要用到 Composer 。
+Composer 是 PHP 的包管理工具。Drupal，Laravel 这类的应用都需要用到 Composer 。
 
 安装 Composer，先进入到某个目录的下面：
 
