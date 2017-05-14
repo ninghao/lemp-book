@@ -27,7 +27,7 @@
 * [Git](gong-ju.md)
 * [Composer](composer.md)
 * [Drush](drush.md)
-* WP-CLI
+* [WP-CLI](wp-cli.md)
 * [Laravel Installer](laravel-installer.md)
 
 ## 附录
