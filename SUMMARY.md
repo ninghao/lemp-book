@@ -19,7 +19,8 @@
 ## 配置
 
 * [配置 NGINX](configuration/nginx.md)
-* [SELinux](configuration/selinux.md)
+* [配置 SELinux](configuration/selinux.md)
+* 配置 PHP-FPM
 
 ## 附录
 
