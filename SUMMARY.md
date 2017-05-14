@@ -7,30 +7,30 @@
 
 ## 虚拟机
 
-* [创建本地虚拟机](vm/config-vm.md)
+* [创建本地虚拟机](virtual-machine--config.md)
 
 ## 环境
 
-* [软件仓库](stack/repo.md)
-* [NGINX](stack/nginx.md)
-* [MySQL / MariaDB](stack/mysql-mariadb.md)
-* [PHP](stack/php.md)
+* [软件仓库](install--repo.md)
+* [NGINX](install--nginx.md)
+* [MySQL / MariaDB](install--mysql-mariadb.md)
+* [PHP](install--php.md)
 
 ## 配置
 
-* [配置 NGINX](configuration/nginx.md)
-* [配置 SELinux](configuration/selinux.md)
-* [配置 PHP-FPM](configuration/php-fpm.md)
+* [配置 NGINX](config--nginx.md)
+* [配置 SELinux](config--selinux.md)
+* [配置 PHP-FPM](config--php-fpm.md)
 
 ## 工具
 
-* [Git](gong-ju.md)
+* [Git](git)
 * [Composer](composer.md)
 * [unzip](unzip.md)
 
 ## 应用
 
-* [phpMyAdmin](ying-yong/yun-xing-php-my-admin.md)
+* [phpMyAdmin](phpmyadmin.md)
 
 ## 附录
 
