@@ -8,5 +8,11 @@
 sudo yum install unzip -y
 ```
 
+使用：
+
+```
+unzip FILE_TO_UNZIP.zip
+```
+
 
 
