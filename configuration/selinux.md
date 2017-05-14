@@ -1,12 +1,12 @@
 # 配置 SELinux
 
-如果你发现配置了 nginx ，指定了网站的目录，提示没有权限访问。这很可能是 selinux 的原因，你可以把它关掉。先查看一下你的系统的 selinux 的状态：
+如果你发现配置了 NGINX ，指定了网站的目录，提示没有权限访问。这很可能是 SELinux 的原因，你可以把它关掉。先查看一下系统的 SELinux 的运行状态：
 
 ```
 sestatus
 ```
 
-上面命令会返回：
+**返回：**
 
 ```
 SELinux status:                 enabled
@@ -20,13 +20,13 @@ Policy deny_unknown status:     allowed
 Max kernel policy version:      28
 ```
 
-Current mode 是 enforcing ，表示 selinux 正在运行，你可以临时关掉它：
+`Current mode` 是 `enforcing` ，表示 SELinux正在运行，临时关掉它可以执行：
 
 ```
 setenforce 0
 ```
 
-永久关掉 selinux，你可以编辑一下它的配置文件：
+想永久关掉 SELinux，需要修改一个配置文件：
 
 ```
 sudo vi /etc/sysconfig/selinux
@@ -44,5 +44,13 @@ SELINUX=enforcing
 SELINUX=disabled
 ```
 
+关掉了 SELinux 可以再去查看一下之前配置好的 NGINX 服务器。
+
 ![](/assets/phpinfo.png)
+
+
+
+
+
+
 
