@@ -5,11 +5,11 @@
 * [介绍](README.md)
 * [开发与生产](prepare.md)
 
-## 本地虚拟机
+## 虚拟机
 
 * [创建本地虚拟机](vm/config-vm.md)
 
-## 搭建环境
+## 环境
 
 * [软件仓库](stack/repo.md)
 * [NGINX](stack/nginx.md)
