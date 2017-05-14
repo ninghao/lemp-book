@@ -16,9 +16,7 @@ conf.d          koi-utf  mime.types  nginx.conf   uwsgi_params
 fastcgi_params  koi-win  modules     scgi_params  win-utf
 ```
 
-
-
-403 Forbidden
+备份
 
 ```
 sudo mv default.conf default.conf.bak
@@ -31,6 +29,28 @@ vi default.conf
 ```
 
 内容
+
+```
+server {
+  listen       80;
+  server_name  localhost;
+  root         /mnt/web;
+  index        index.php index.html index.htm;
+
+  location / {
+     try_files $uri $uri/ /index.php?$query_string;
+   }
+
+ location ~ \.php$ {
+   fastcgi_pass 127.0.0.1:9000;
+   fastcgi_index index.php;
+   fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+   include fastcgi_params;  
+ }
+}
+```
+
+创建
 
 ```
 mkdir -p /mnt/web
@@ -48,7 +68,17 @@ echo "<?php phpinfo(); ?>" >> /mnt/web/phpinfo.php
 sudo systemctl reload nginx
 ```
 
+访问：
 
+```
+http://192.168.33.10/
+```
+
+报错：
+
+```
+403 Forbidden
+```
 
 
 
