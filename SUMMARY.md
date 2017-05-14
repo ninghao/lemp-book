@@ -16,6 +16,10 @@
 * [MySQL / MariaDB](stack/mysql-mariadb.md)
 * [PHP](stack/php.md)
 
+## 配置
+
+* [配置 NGINX](configuration/nginx.md)
+
 ## 附录
 
 * [相关资源](appendix--sources.md)

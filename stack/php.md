@@ -18,13 +18,13 @@ PHP 有很多扩展，根据网站的需求，你可能需要在环境里安装�
 sudo yum install php71u-cli php71u-common php71u-fpm php71u-gd php71u-mbstring php71u-mcrypt php71u-mysqlnd php71u-json php71u-xml php71u-pecl-memcached -y
 ```
 
-启动：
+**启动：**
 
 ```
 sudo systemctl start php-fpm
 ```
 
-配置开机自启动：
+**配置开机自启动：**
 
 ```
 sudo systemctl enable php-fpm
