@@ -44,23 +44,21 @@ sudo systemctl reload php-fpm
 
 这样运行 PHP-FPM 的用户就变成了 `nginx`，现在，我们可以把需要写入权限的目录的拥有者修改成 `nginx`，这样 PHP-FPM 就可以写入内容到这个目录了。
 
-存储 session 文件的地方，`session.save_path`，值是：
+## session 目录权限
+
+存储 session 文件的地方，是 `session.save_path`  配置的，现在它的值是：
 
 ```
 /var/lib/php/fpm/session
 ```
 
+这个目录一般是在安装 PHP 的时候创建的，目录的拥有者会是 `php-fpm`，上面我们把运行 PHP-FPM 的用户修改成了 `nginx`，所以你需要把这个 session 目录的拥有者也修改成 `nginx`，这样 PHP-FPM 才能写入 session 文件到这个目录的下面。
 
+执行：
 
 ```
 chown -R nginx:nginx /var/lib/php/fpm
 ```
-
-
-
-
-
-
 
 
 
