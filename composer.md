@@ -86,5 +86,11 @@ Composer 安装器现在没用了，可以删除掉：
 rm -rf installer
 ```
 
+中国镜像：
+
+```
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+```
+
 
 
