@@ -92,5 +92,5 @@ rm -rf installer
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
-
+https://pkg.phpcomposer.com/
 
