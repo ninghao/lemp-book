@@ -24,7 +24,7 @@
 
 ## 工具
 
-* [Git](git)
+* [Git](git.md)
 * [Composer](composer.md)
 * [unzip](unzip.md)
 
